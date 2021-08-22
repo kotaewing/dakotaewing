@@ -10,45 +10,39 @@ function App() {
   const [projectArray] = useState([
     {
       title: 'My Garden',
-      description: 'The description goes here',
       link: 'link here',
       github: 'github here',
       thumbnail: 'my-garden.png'
     },
     {
-      title: 'My Garden',
-      description: 'The description goes here',
+      title: 'Weather Dashboard',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'my-garden.png'
+      thumbnail: 'weather-dashboard.png'
     },
     {
-      title: 'My Garden',
-      description: 'The description goes here',
+      title: 'book-search',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'my-garden.png'
+      thumbnail: 'book-search.png'
     },
     {
-      title: 'My Garden',
-      description: 'The description goes here',
+      title: 'On The Road',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'my-garden.png'
+      thumbnail: 'otr.png'
     },
     {
-      title: 'My Garden',
-      description: 'The description goes here',
+      title: 'Painterly',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'my-garden.png'
+      thumbnail: 'painterly.png'
     },
     {
-      title: 'My Garden',
-      description: 'The description goes here',
+      title: 'Coding Quiz',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'my-garden.png'
+      thumbnail: 'coding-quiz.png'
     }
   ])
 

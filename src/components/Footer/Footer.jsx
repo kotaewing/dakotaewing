@@ -1,5 +1,4 @@
 import React from 'react';
-import { BottomNavigation } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 function Footer() {
@@ -10,16 +9,18 @@ function Footer() {
             bottom: '0px',
             width: '100vw',
             backgroundColor: 'black',
-            color: 'white'
+            color: 'white',
+            display: 'flex',
+            justifyContent: 'center'
         }
     })
 
     const classes = useStyles();
 
     return (
-        <BottomNavigation className={classes.root}>
-            <h3>DAKOTA EWING</h3>
-        </BottomNavigation>
+        <div className={classes.root}>
+            <h3>DAKOTA EWING 2021</h3>
+        </div>
     )
 }
 
