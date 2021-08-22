@@ -1,0 +1,15 @@
+.nav {
+  display: inline;
+}
+
+.nav-list {
+  display: inline;
+  color: red;
+  list-style-type: none;
+  flex: 1;
+}
+
+.nav-titles {
+  display: inline;
+  margin: 0 20px;
+}
