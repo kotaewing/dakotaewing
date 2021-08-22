@@ -13,42 +13,42 @@ function App() {
       description: 'The description goes here',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'thumbnail here'
+      thumbnail: 'my-garden.png'
     },
     {
       title: 'My Garden',
       description: 'The description goes here',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'thumbnail here'
+      thumbnail: 'my-garden.png'
     },
     {
       title: 'My Garden',
       description: 'The description goes here',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'thumbnail here'
+      thumbnail: 'my-garden.png'
     },
     {
       title: 'My Garden',
       description: 'The description goes here',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'thumbnail here'
+      thumbnail: 'my-garden.png'
     },
     {
       title: 'My Garden',
       description: 'The description goes here',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'thumbnail here'
+      thumbnail: 'my-garden.png'
     },
     {
       title: 'My Garden',
       description: 'The description goes here',
       link: 'link here',
       github: 'github here',
-      thumbnail: 'thumbnail here'
+      thumbnail: 'my-garden.png'
     }
   ])
 
@@ -71,9 +71,9 @@ function App() {
           {renderPortfolio && <Portfolio projects={projectArray} />}
           {renderContact && <Contact />}
           {renderResume && <Resume />}
+          <Footer />
         </main>
       </div>
-      <Footer />
     </div>
   );
 }

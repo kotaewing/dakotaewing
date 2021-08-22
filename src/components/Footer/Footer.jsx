@@ -6,7 +6,7 @@ function Footer() {
 
     const useStyles = makeStyles({
         root: {
-            position: 'absolute',
+            position: 'fixed',
             bottom: '0px',
             width: '100vw',
             backgroundColor: 'black',
