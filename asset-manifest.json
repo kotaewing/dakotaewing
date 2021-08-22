@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dakotaewing/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/dakotaewing/static/js/main.9fdcb991.chunk.js",
+    "main.js.map": "/dakotaewing/static/js/main.9fdcb991.chunk.js.map",
+    "runtime-main.js": "/dakotaewing/static/js/runtime-main.3de67471.js",
+    "runtime-main.js.map": "/dakotaewing/static/js/runtime-main.3de67471.js.map",
+    "static/js/2.d9f74559.chunk.js": "/dakotaewing/static/js/2.d9f74559.chunk.js",
+    "static/js/2.d9f74559.chunk.js.map": "/dakotaewing/static/js/2.d9f74559.chunk.js.map",
+    "static/js/3.71fe6d89.chunk.js": "/dakotaewing/static/js/3.71fe6d89.chunk.js",
+    "static/js/3.71fe6d89.chunk.js.map": "/dakotaewing/static/js/3.71fe6d89.chunk.js.map",
+    "index.html": "/dakotaewing/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/dakotaewing/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.d9f74559.chunk.js.LICENSE.txt": "/dakotaewing/static/js/2.d9f74559.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3de67471.js",
+    "static/js/2.d9f74559.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.9fdcb991.chunk.js"
+  ]
+}
