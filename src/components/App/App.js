@@ -4,6 +4,8 @@ import Header from '../Header';
 import AboutMe from '../AboutMe';
 import Footer from '../Footer';
 import Portfolio from '../Portfolio';
+import Contact from '../Contact';
+import Resume from '../Resume';
 
 function App() {
   const [projectArray] = useState([
@@ -81,8 +83,8 @@ function App() {
         <main>
           {renderAbout && <AboutMe />}
           {renderPortfolio && <Portfolio />}
-          {renderContact && <AboutMe />}
-          {renderResume && <AboutMe />}
+          {renderContact && <Contact />}
+          {renderResume && <Resume />}
         </main>
       </div>
       <Footer />
