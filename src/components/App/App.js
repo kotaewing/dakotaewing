@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Header from '../Header';
 import AboutMe from '../AboutMe';
 import Footer from '../Footer';
+import Portfolio from '../Portfolio';
 
 function App() {
   const [projectArray] = useState([
@@ -78,7 +79,10 @@ function App() {
           setRenderResume={setRenderResume}
         />
         <main>
-
+          {renderAbout && <AboutMe />}
+          {renderPortfolio && <Portfolio />}
+          {renderContact && <AboutMe />}
+          {renderResume && <AboutMe />}
         </main>
       </div>
       <Footer />

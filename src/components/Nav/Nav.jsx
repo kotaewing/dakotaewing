@@ -16,6 +16,7 @@ import { makeStyles } from '@material-ui/core';
           renderResume,
           setRenderResume,
     } = props
+    
     const useStyles = makeStyles(() => ({
         navBar: {
             background: 'black',
