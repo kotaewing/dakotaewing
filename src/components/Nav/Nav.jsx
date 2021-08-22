@@ -28,7 +28,9 @@ import { makeStyles } from '@material-ui/core';
     return (
       <Box height={64} display={'flex'} className={classes.navBar}>
           <NavMenu useStyles={useZoomNavigationMenuStyles}>
-            <NavItem>
+            <NavItem onClick={() => {
+              window.location.reload(false);
+            }}>
               <h2>Dakota Ewing</h2>
             </NavItem>
             <NavItem onClick={() => {
