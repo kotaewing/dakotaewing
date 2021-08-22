@@ -7,13 +7,9 @@ import { makeStyles } from '@material-ui/core';
 
   function Nav(props) {
     const {
-          renderAbout,
           setRenderAbout,
-          renderPortfolio,
           setRenderPortfolio,
-          renderContact,
           setRenderContact,
-          renderResume,
           setRenderResume,
     } = props
     

@@ -82,7 +82,7 @@ function App() {
         />
         <main>
           {renderAbout && <AboutMe />}
-          {renderPortfolio && <Portfolio />}
+          {renderPortfolio && <Portfolio projects={projectArray} />}
           {renderContact && <Contact />}
           {renderResume && <Resume />}
         </main>
