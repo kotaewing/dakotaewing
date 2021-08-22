@@ -5,7 +5,17 @@ import { useZoomNavigationMenuStyles } from '@mui-treasury/styles/navigationMenu
 import { makeStyles } from '@material-ui/core';
 
 
-  function Nav() {
+  function Nav(props) {
+    const {
+          renderAbout,
+          setRenderAbout,
+          renderPortfolio,
+          setRenderPortfolio,
+          renderContact,
+          setRenderContact,
+          renderResume,
+          setRenderResume,
+    } = props
     const useStyles = makeStyles(() => ({
         navBar: {
             background: 'black',
@@ -20,16 +30,36 @@ import { makeStyles } from '@material-ui/core';
             <NavItem>
               <h2>Dakota Ewing</h2>
             </NavItem>
-            <NavItem>
+            <NavItem onClick={() => {
+              setRenderAbout(true);
+              setRenderPortfolio(false);
+              setRenderContact(false);
+              setRenderResume(false);
+            }}>
               About Me
             </NavItem>
-            <NavItem>
+            <NavItem onClick={() => {
+              setRenderAbout(false);
+              setRenderPortfolio(true);
+              setRenderContact(false);
+              setRenderResume(false);
+            }}>
               Portfolio
             </NavItem>
-            <NavItem>
+            <NavItem onClick={() => {
+              setRenderAbout(false);
+              setRenderPortfolio(false);
+              setRenderContact(true);
+              setRenderResume(false);
+            }}>
               Contact
             </NavItem>
-            <NavItem>
+            <NavItem onClick={() => {
+              setRenderAbout(false);
+              setRenderPortfolio(false);
+              setRenderContact(false);
+              setRenderResume(true);
+            }}>
               Resume
             </NavItem>
           </NavMenu>

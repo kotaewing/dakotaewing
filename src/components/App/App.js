@@ -51,6 +51,9 @@ function App() {
   ])
 
   const [renderAbout, setRenderAbout] = useState(true);
+  const [renderPortfolio, setRenderPortfolio] = useState(false);
+  const [renderContact, setRenderContact] = useState(false);
+  const [renderResume, setRenderResume] = useState(false);
 
   const theme = React.useMemo(
     () =>
@@ -65,9 +68,17 @@ function App() {
     <ThemeProvider theme={theme}>
       <div>
         <Header
-
+          renderAbout={renderAbout}
+          setRenderAbout={setRenderAbout}
+          renderPortfolio={renderPortfolio}
+          setRenderPortfolio={setRenderPortfolio}
+          renderContact={renderContact}
+          setRenderContact={setRenderContact}
+          renderResume={renderResume}
+          setRenderResume={setRenderResume}
         />
         <main>
+
         </main>
       </div>
       <Footer />
