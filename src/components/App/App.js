@@ -1,28 +1,56 @@
 import React, { useState } from 'react';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../Header';
 import AboutMe from '../AboutMe';
 import Footer from '../Footer';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
-  const [categories] = useState([
+  const [projectArray] = useState([
     {
-      name: 'About Me',
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: 'My Garden',
+      description: 'The description goes here',
+      link: 'link here',
+      github: 'github here',
+      thumbnail: 'thumbnail here'
     },
-    { name: 'Portfolio', description: "Portraits of people in my life" },
-    { name: 'Contact', description: 'Delicious delicacies' },
     {
-      name: 'Resume',
-      description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+      title: 'My Garden',
+      description: 'The description goes here',
+      link: 'link here',
+      github: 'github here',
+      thumbnail: 'thumbnail here'
+    },
+    {
+      title: 'My Garden',
+      description: 'The description goes here',
+      link: 'link here',
+      github: 'github here',
+      thumbnail: 'thumbnail here'
+    },
+    {
+      title: 'My Garden',
+      description: 'The description goes here',
+      link: 'link here',
+      github: 'github here',
+      thumbnail: 'thumbnail here'
+    },
+    {
+      title: 'My Garden',
+      description: 'The description goes here',
+      link: 'link here',
+      github: 'github here',
+      thumbnail: 'thumbnail here'
+    },
+    {
+      title: 'My Garden',
+      description: 'The description goes here',
+      link: 'link here',
+      github: 'github here',
+      thumbnail: 'thumbnail here'
     }
-  ]);
+  ])
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [renderAbout, setRenderAbout] = useState(true);
 
   const theme = React.useMemo(
     () =>
@@ -37,20 +65,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <div>
         <Header
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
+
         />
         <main>
-          {!contactSelected ? (
-            <>
-
-            </>
-          ) : (
-            <p>This is default</p>
-          )}
         </main>
       </div>
       <Footer />
