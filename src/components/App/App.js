@@ -10,38 +10,38 @@ function App() {
   const [projectArray] = useState([
     {
       title: 'My Garden',
-      link: 'link here',
-      github: 'github here',
+      link: 'https://kotaewing.github.io/my-garden/',
+      github: 'https://github.com/kotaewing/my-garden',
       thumbnail: 'my-garden.png'
     },
     {
       title: 'Weather Dashboard',
-      link: 'link here',
-      github: 'github here',
+      link: 'https://kotaewing.github.io/my-weather-dashboard/',
+      github: 'https://github.com/kotaewing/my-weather-dashboard',
       thumbnail: 'weather-dashboard.png'
     },
     {
       title: 'book-search',
-      link: 'link here',
-      github: 'github here',
+      link: 'https://dke-book-search.herokuapp.com/',
+      github: 'https://github.com/kotaewing/book-search',
       thumbnail: 'book-search.png'
     },
     {
       title: 'On The Road',
-      link: 'link here',
-      github: 'github here',
+      link: 'https://ontheroadapp.herokuapp.com/',
+      github: 'https://github.com/kotaewing/OnTheRoad',
       thumbnail: 'otr.png'
     },
     {
       title: 'Painterly',
-      link: 'link here',
-      github: 'github here',
+      link: 'https://painter1y.herokuapp.com/',
+      github: 'https://github.com/kotaewing/painterly',
       thumbnail: 'painterly.png'
     },
     {
       title: 'Coding Quiz',
-      link: 'link here',
-      github: 'github here',
+      link: 'https://kotaewing.github.io/coding-quiz/index.html',
+      github: 'https://github.com/kotaewing/coding-quiz',
       thumbnail: 'coding-quiz.png'
     }
   ])
