@@ -1,7 +1,11 @@
-function Portfolio() {
+function Portfolio({ projects }) {
     return (
         <div>
-            Portfolio
+            {projects.map((project, idx) => {
+                return (
+                    <h1 key={idx}>{project.title}</h1>
+                )
+            })}
         </div>
     )
 }

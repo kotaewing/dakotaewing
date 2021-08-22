@@ -61,13 +61,9 @@ function App() {
     <div>
       <div>
         <Header
-          renderAbout={renderAbout}
           setRenderAbout={setRenderAbout}
-          renderPortfolio={renderPortfolio}
           setRenderPortfolio={setRenderPortfolio}
-          renderContact={renderContact}
           setRenderContact={setRenderContact}
-          renderResume={renderResume}
           setRenderResume={setRenderResume}
         />
         <main>
