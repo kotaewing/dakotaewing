@@ -8,7 +8,9 @@ function Footer() {
         root: {
             position: 'absolute',
             bottom: '0px',
-            width: '100vw'
+            width: '100vw',
+            backgroundColor: 'black',
+            color: 'white'
         }
     })
 
@@ -16,7 +18,7 @@ function Footer() {
 
     return (
         <BottomNavigation className={classes.root}>
-            <h3>Dakota</h3>
+            <h3>DAKOTA EWING</h3>
         </BottomNavigation>
     )
 }
