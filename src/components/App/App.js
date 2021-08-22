@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../Header';
 import AboutMe from '../AboutMe';
+import Footer from '../Footer';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -52,6 +53,7 @@ function App() {
           )}
         </main>
       </div>
+      <Footer />
     </ThemeProvider>
   );
 }
