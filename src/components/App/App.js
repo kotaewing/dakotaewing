@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Header from '../Header';
 import AboutMe from '../AboutMe';
 import Footer from '../Footer';
@@ -58,17 +57,8 @@ function App() {
   const [renderContact, setRenderContact] = useState(false);
   const [renderResume, setRenderResume] = useState(false);
 
-  const theme = React.useMemo(
-    () =>
-      createTheme({
-        palette: {
-          type: 'dark',
-        },
-      })
-  );
-
   return (
-    <ThemeProvider theme={theme}>
+    <div>
       <div>
         <Header
           renderAbout={renderAbout}
@@ -88,7 +78,7 @@ function App() {
         </main>
       </div>
       <Footer />
-    </ThemeProvider>
+    </div>
   );
 }
 

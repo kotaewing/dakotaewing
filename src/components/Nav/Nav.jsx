@@ -16,6 +16,10 @@ import { makeStyles } from '@material-ui/core';
     const useStyles = makeStyles(() => ({
         navBar: {
             background: 'black',
+            color: 'white'
+        },
+        navButton: {
+          color: 'white'
         }
     }));
 
@@ -24,12 +28,12 @@ import { makeStyles } from '@material-ui/core';
     return (
       <Box height={64} display={'flex'} className={classes.navBar}>
           <NavMenu useStyles={useZoomNavigationMenuStyles}>
-            <NavItem onClick={() => {
+            <NavItem className={classes.navButton} onClick={() => {
               window.location.reload(false);
             }}>
               <h2>Dakota Ewing</h2>
             </NavItem>
-            <NavItem onClick={() => {
+            <NavItem className={classes.navButton} onClick={() => {
               setRenderAbout(true);
               setRenderPortfolio(false);
               setRenderContact(false);
@@ -37,7 +41,7 @@ import { makeStyles } from '@material-ui/core';
             }}>
               About Me
             </NavItem>
-            <NavItem onClick={() => {
+            <NavItem className={classes.navButton} onClick={() => {
               setRenderAbout(false);
               setRenderPortfolio(true);
               setRenderContact(false);
@@ -45,7 +49,7 @@ import { makeStyles } from '@material-ui/core';
             }}>
               Portfolio
             </NavItem>
-            <NavItem onClick={() => {
+            <NavItem className={classes.navButton} onClick={() => {
               setRenderAbout(false);
               setRenderPortfolio(false);
               setRenderContact(true);
@@ -53,7 +57,7 @@ import { makeStyles } from '@material-ui/core';
             }}>
               Contact
             </NavItem>
-            <NavItem onClick={() => {
+            <NavItem className={classes.navButton} onClick={() => {
               setRenderAbout(false);
               setRenderPortfolio(false);
               setRenderContact(false);
