@@ -2,6 +2,9 @@
 # Professional Portfolio
 ![Screen Shot 2021-08-22 at 6 39 10 PM](https://user-images.githubusercontent.com/79291655/130375687-aed9d2fc-06dd-4838-9a88-676b9480004a.png)
 
+## Link
+To visit my portfolio, [click here](https://6122ed09e095bf0007083773--dakotaewing.netlify.app/)
+
 ## Table of Contents
 * [Description](#description)
 * [Questions](#questions)
