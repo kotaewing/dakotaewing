@@ -28,7 +28,7 @@ function AboutMe() {
                         <CardMedia
                             className={classes.img}
                             component="img"
-                            alt='alt'
+                            alt='Dakota at Antelope Island'
                             image={require(`../../images/dakota.jpg`).default}
                         />
                     </Card>

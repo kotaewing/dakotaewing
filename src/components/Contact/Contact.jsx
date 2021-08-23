@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid';
 
 function Contact() {
     const useStyles = makeStyles({
+        parent: {
+            display: 'flex',
+            justifyContent: 'center'
+        },
         label: {
-            marginRight: '10px'
+            marginRight: '10px',
+            fontWeight: 'bold'
+        },
+        title: {
+            flex: '1'
         }
     })
 
@@ -40,13 +49,18 @@ function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState)
+        setFormState({ name: '', email: '', message: '' })
     }
 
     return (
-        <section>
-            <h1>Contact me</h1>
+        <Grid container spacing={2} direction='column' justifyContent='center' alignItems='center'>
+            <Grid item>
+                <h1 >Contact me</h1>
+            </Grid>
+            <Grid container item direction='column' justifyContent='center' alignItems='center'>
+
             <form id='contact-form' onSubmit={handleSubmit}>
+                <Grid item>
                 <div>
                     <label htmlFor='name' className={classes.label}>Name:</label>
                     <input type='text' defaultValue={name} onBlur={handleChange} name='name'></input>
@@ -64,9 +78,13 @@ function Contact() {
                         <p className='error-text'>{errorMessage}</p>
                     </div>
                 )}
+                </Grid>
+                <Grid item>
                 <button type='submit'>Submit</button>
+                </Grid>
             </form>
-        </section>
+            </Grid>
+        </Grid>
     )
 }
 
